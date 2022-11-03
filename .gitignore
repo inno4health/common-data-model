@@ -1,0 +1,6 @@
+*.jar
+*.bat
+*.sh
+inno4health.conf
+logs/*
+.idea/

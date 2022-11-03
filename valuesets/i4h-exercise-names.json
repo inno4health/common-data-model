@@ -1,0 +1,126 @@
+{
+  "resourceType": "ValueSet",
+  "id": "exercise-and-muscle",
+  "url": "https://inno4health.eu/fhir/ValueSet/exercise-and-muscle",
+  "version": "0.1",
+  "name": "Inno4Health Exercise and Muscle",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-10-25",
+  "publisher": "Inno4Health",
+  "contact": [
+    {
+      "name": "Inno4Health Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://inno4health.eu/"
+        }
+      ]
+    }
+  ],
+  "description": "List of codes for muscles and exercises defined within Inno4Health project",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://inno4health.eu/fhir/CodeSystem/exercise-names",
+        "concept": [
+          {
+            "code": "adductor-side-lying",
+            "display": "Adductor Side Lying"
+          },
+          {
+            "code": "SL-elevated-glute-bridge",
+            "display": "SL elevated glute bridge (45 cm elevation)"
+          },
+          {
+            "code": "SL-hip-thrust",
+            "display": "SL hip thrust"
+          },
+          {
+            "code": "SL-prone-curls",
+            "display": "SL prone curls (no resistance)"
+          },
+          {
+            "code": "SL-straight-knee-calf-raise",
+            "display": "SL Straight knee calf raise"
+          },
+          {
+            "code": "isometric-at-0deg",
+            "display": "Isometric at 0 deg (prone position with full resistance)"
+          },
+          {
+            "code": "isometric-at-45deg",
+            "display": "Isometric at 45 deg (prone position with full resistance)"
+          },
+          {
+            "code": "isometric-at-90deg",
+            "display": "Isometric at 90 deg (prone position with full resistance)"
+          },
+          {
+            "code": "DL-glute-bridge",
+            "display": "DL glute bridge"
+          },
+          {
+            "code": "SL-glute-bridge",
+            "display": "SL glute bridge"
+          },
+          {
+            "code": "DL-elevated-glute-bridge",
+            "display": "DL elevated glute bridge (45 cm elevation)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "251515005",
+            "display": "Electromyography finding (finding)"
+          },
+          {
+            "code": "1202026006",
+            "display": "Number of exercise repetitions completed (observable entity)"
+          },
+          {
+            "code": "228449008",
+            "display": "Frequency of exercise (observable entity)"
+          },
+          {
+            "code": "85629004 | Adductor longus muscle structure |: 272741003 | laterality | = 7771000 | left |",
+            "display": "Left adductor longus muscle structure"
+          },
+          {
+            "code": "85629004 | Adductor longus muscle structure |: 272741003 | laterality | = 24028007 | right |",
+            "display": "Right adductor longus muscle structure"
+          },
+          {
+            "code": "89241006 | Biceps femoris muscle structure |: 272741003 | laterality | = 7771000 | left |",
+            "display": "Left biceps femoris muscle structure"
+          },
+          {
+            "code": "89241006 | Biceps femoris muscle structure |: 272741003 | laterality | = 24028007 | right |",
+            "display": "Right biceps femoris muscle structure"
+          },
+          {
+            "code": "392565009 | Posterior crural muscle structure |: 272741003 | laterality | = 7771000 | left |",
+            "display": "Left posterior crural muscle structure"
+          },
+          {
+            "code": "392565009 | Posterior crural muscle structure |: 272741003 | laterality | = 24028007 | right |",
+            "display": "Right posterior crural muscle structure"
+          },
+          {
+            "code": "50340007 | Biceps femoris muscle structure |: 272741003 | laterality | = 7771000 | left |",
+            "display": "Left semitendinosus muscle structure"
+          },
+          {
+            "code": "50340007 | Biceps femoris muscle structure |: 272741003 | laterality | = 24028007 | right |",
+            "display": "Right semitendinosus muscle structure"
+          }
+        ]
+      }
+    ]
+  }
+}

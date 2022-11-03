@@ -1,0 +1,166 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://inno4health.eu/fhir/StructureDefinition/I4H-AtheleteActivityObservation",
+  "name": "I4HAtheleteActivityObservation",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "athlete-activity-emg-data",
+              "display": "EMG measurement values per set of observed exercise"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:exerciseName",
+        "path": "Observation.component",
+        "sliceName": "exerciseName",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:exerciseName.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "exercise-name"
+      },
+      {
+        "id": "Observation.component:exerciseName.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:exerciseName.value[x].coding.code",
+        "path": "Observation.component.value[x].coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://inno4health.eu/fhir/ValueSet/exercise-and-muscle"
+        }
+      },
+      {
+        "id": "Observation.component:exerciseName.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+      },
+      {
+        "id": "Observation.component:set",
+        "path": "Observation.component",
+        "sliceName": "set",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:set.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "228449008"
+      },
+      {
+        "id": "Observation.component:set.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:set.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+      },
+      {
+        "id": "Observation.component:rep",
+        "path": "Observation.component",
+        "sliceName": "rep",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rep.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "1202026006"
+      },
+      {
+        "id": "Observation.component:rep.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:rep.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+      },
+      {
+        "id": "Observation.component:emgData",
+        "path": "Observation.component",
+        "sliceName": "emgData",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:emgData.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251515005",
+              "display": "Electromyography finding"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:emgData.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "251515005"
+      },
+      {
+        "id": "Observation.component:emgData.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:emgData.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+      }
+    ]
+  }
+
+}

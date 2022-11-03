@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "exercise-names",
+  "url": "https://inno4health.eu/fhir/CodeSystem/exercise-names",
+  "version": "0.1",
+  "name": "Inno4Health Exercise Names",
+  "title": "Inno4Health Exercise Names",
+  "status": "draft",
+  "date": "2022-10-25",
+  "publisher": "Inno4Health",
+  "contact": [
+    {
+      "name": "Inno4Health Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://inno4health.eu/"
+        }
+      ]
+    }
+  ],
+  "description": "List of custom exercise names defined within Inno4Health project",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "adductor-side-lying",
+      "display": "Adductor Side Lying"
+    },
+    {
+      "code": "SL-elevated-glute-bridge",
+      "display": "SL elevated glute bridge (45 cm elevation)"
+    },
+    {
+      "code": "SL-hip-thrust",
+      "display": "SL hip thrust "
+    },
+    {
+      "code": "SL-prone-curls",
+      "display": "SL prone curls (no resistance)"
+    },
+    {
+      "code": "SL-straight-knee-calf-raise",
+      "display": "SL Straight knee calf raise"
+    },
+    {
+      "code": "isometric-at-0deg",
+      "display": "Isometric at 0 deg (prone position,, with full resistance)"
+    },
+    {
+      "code": "isometric-at-45deg",
+      "display": "Isometric at 45 deg (prone position,, with full resistance)"
+    },
+    {
+      "code": "isometric-at-90deg",
+      "display": "Isometric at 90 deg (prone position,, with full resistance)"
+    },
+    {
+      "code": "DL-glute-bridge",
+      "display": "DL glute bridge" 
+    },
+    {
+      "code": "SL-glute-bridge",
+      "display": "SL glute bridge" 
+    },
+    {
+      "code": "DL-elevated-glute-bridge",
+      "display": "DL elevated glute bridge (45 cm elevation)" 
+    }
+  ]
+}
