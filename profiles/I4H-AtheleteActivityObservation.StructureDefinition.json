@@ -66,11 +66,6 @@
         }
       },
       {
-        "id": "Observation.component:exerciseName.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
-      },
-      {
         "id": "Observation.component:set",
         "path": "Observation.component",
         "sliceName": "set",
@@ -92,11 +87,6 @@
         ]
       },
       {
-        "id": "Observation.component:set.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
-      },
-      {
         "id": "Observation.component:rep",
         "path": "Observation.component",
         "sliceName": "rep",
@@ -116,11 +106,6 @@
             "code": "string"
           }
         ]
-      },
-      {
-        "id": "Observation.component:rep.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
       },
       {
         "id": "Observation.component:emgData",
@@ -154,11 +139,6 @@
             "code": "SampledData"
           }
         ]
-      },
-      {
-        "id": "Observation.component:emgData.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
       }
     ]
   }
