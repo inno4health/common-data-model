@@ -1,6 +1,7 @@
 *.jar
 *.bat
 *.sh
-inno4health.conf
+onfhir.conf
 logs/*
 .idea/
+onFHIRRepository.emb.mongo/*
